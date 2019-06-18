@@ -1,34 +1,43 @@
 {
-    "users": [
-      {
-        "id": 1,
-        "first-name": "amani",
-        "last-name": "kanu",
-        "email": "kanuamani@gmail.com",
-        "username": "sirsuccess",
-        "password": "12345",
-        "roleID": 2
-      }
-    ],
-    "roles": [
-      {
-        "id": 1,
-        "role": "management"
-      },
-      {
-        "id": 2,
-        "role": "staff"
-      }
-    ],
-    "leaves": [
-      {
-        "id": 1,
-        "type": "annual",
-        "reason": "annual compulsory leave for all staff",
-        "startDate": "29/05/2017",
-        "endDate": "29/06/2017",
-        "userID": 1,
-        "status": "not Approve"
-      }
-    ]
-  }
+  "users": [
+    {
+      "id": 1,
+      "first-name": "amani",
+      "last-name": "kanu",
+      "email": "kanuamani@gmail.com",
+      "username": "sirsuccess",
+      "password": "12345",
+      "roleID": 2
+    },
+    {
+      "first-name": "amani",
+      "last-name": "ten",
+      "email": "ten@gmsil.com",
+      "username": "jjdjdj",
+      "password": "12345678",
+      "roleID": "1",
+      "id": 2
+    }
+  ],
+  "roles": [
+    {
+      "id": 1,
+      "role": "management"
+    },
+    {
+      "id": 2,
+      "role": "staff"
+    }
+  ],
+  "leaves": [
+    {
+      "id": 1,
+      "type": "annual",
+      "reason": "annual compulsory leave for all staff",
+      "startDate": "29/05/2017",
+      "endDate": "29/06/2017",
+      "userID": 1,
+      "status": "not Approve"
+    }
+  ]
+}
