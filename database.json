@@ -40,10 +40,10 @@
       "status": "not Approve"
     },
     {
-      "type": "Vacation days",
-      "reason": "i need vacation",
-      "startDate": "2019-06-07",
-      "endDate": "2019-06-29",
+      "type": "Annual leave",
+      "reason": "my right",
+      "startDate": "2019-05-28",
+      "endDate": "2019-06-19",
       "userID": "2",
       "status": "Not Approve",
       "id": 2
