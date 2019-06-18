@@ -1,0 +1,26 @@
+*{
+    padding: 0;
+    margin: 0;
+    border: none;
+    list-style: none;
+    font-family: OpenSans;
+    text-decoration: none;
+    text-decoration-color: #000;
+    /* default CSS page setting */
+}
+
+body{
+    background-image: url("https://cdn.pixabay.com/photo/2015/07/17/22/43/student-849825__340.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+.back-color{
+   
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(67, 67, 67, 0.2));
+}
+.center-item{
+ margin-top: 10em !important;
+}
