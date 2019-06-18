@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>LEAVE MANAGEMENT SYSTEM</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+        integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">LOGO</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+    
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="home.html">Home </a>
+            </li>
+          </ul>
+          <div class="form-inline mx-auto">
+            <div class="login mr-5"><a href="create-leaves.html">Create Leave</a></div>
+            <div class="login"><a href="view-leave.html">View Leave</a></div>
+          </div>
+          <div class="form-inline">
+            <div class="login mr-5"><a href="profile.html"><i class="fas fa-user"></i> View Profile</a></div>
+            <button id="logout" class="btn btn-primary"><i class="fas fa-sign-out-alt"></i>LOGOUT</a></button>
+          </div>
+    
+        </div>
+      </nav>
+    <div class="container mt-5 text-center ">
+        <div class="card w-50 mx-auto my-auto">
+            <div class="card-body">
+                <h2 class="card-title card-header bg-primary">Create Leave</h2>
+                <form id="leaveReg">
+                    <label for="type">
+                        Type of leave: <select id="type" class="custom-select form-control-md mr-3 ml-3">
+                            <option selected>select leave type</option>
+                            <option value="Maternity/Paternity">Maternity/Paternity</option>
+                            <option value="Vacation days">Vacation days</option>
+                            <option value="Annual leave">Annual leave</option>
+                            <option value="Study leav">Study leave</option>
+                            <option value="Leave for a medical appointment">Leave for a medical appointment</option>
+                            <option value="Parental leave">Parental leave</option>
+                            <option value="Pregnancy and/or pregnancy disability">Pregnancy disability
+                            </option>
+                            <option value="Annual leave">Annual leave</option>
+                            <option value="others">others</option>
+                        </select>
+                    </label><br>
+                    <label for="reason">Reason for Leave</label>
+                    <textarea class="form-control" id="reason" placeholder="type your reason here" required></textarea>
+                    <div class="invalid-feedback">
+                        Please enter a message in the textarea.
+                    </div>
+                    <div class="flex-column">
+                        <label for="start date">
+                            Start Date: <input type="date" id="start-date"
+                                class="form-control form-control-md mr-3 ml-3" required>
+                        </label>
+                        <label for="end date">
+                            End Date: <input type="date" id="end-date" class="form-control form-control-md mr-3 ml-3"
+                                required>
+                        </label>
+                    </div>
+
+            </div>
+            <input type="submit" id="submit" class="btn btn-primary" value="Send for approval">
+        </div>
+        </form>
+    </div>
+
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <script src="js/createLeave.js"></script>
+</body>
+
+</html>

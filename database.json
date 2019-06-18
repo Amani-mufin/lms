@@ -10,11 +10,11 @@
       "roleID": 2
     },
     {
-      "first-name": "amani",
-      "last-name": "ten",
-      "email": "ten@gmsil.com",
-      "username": "jjdjdj",
-      "password": "12345678",
+      "first-name": "test",
+      "last-name": "test",
+      "email": "test@gmail.com",
+      "username": "test",
+      "password": "12345",
       "roleID": "1",
       "id": 2
     }
@@ -38,6 +38,15 @@
       "endDate": "29/06/2017",
       "userID": 1,
       "status": "not Approve"
+    },
+    {
+      "type": "Vacation days",
+      "reason": "i need vacation",
+      "startDate": "2019-06-07",
+      "endDate": "2019-06-29",
+      "userID": "2",
+      "status": "Not Approve",
+      "id": 2
     }
   ]
 }
