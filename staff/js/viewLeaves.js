@@ -1,7 +1,6 @@
 
 $(document).ready(function () {
     var id = sessionStorage.getItem("user");
-    console.log("normar" + id)
     getAllLeave(id)
     //get all leave related to a staff
     function getAllLeave(id) {
