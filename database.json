@@ -67,15 +67,6 @@
       "id": 2
     },
     {
-      "type": "Parental leave",
-      "reason": "i need to take care of my of child",
-      "startDate": "2019-06-18",
-      "endDate": "2019-06-29",
-      "userID": "2",
-      "status": "Not Approve",
-      "id": 4
-    },
-    {
       "type": "Study leav",
       "reason": "i love this",
       "startDate": "2019-06-07",
