@@ -74,6 +74,15 @@
       "userID": "2",
       "status": "Not Approve",
       "id": 4
+    },
+    {
+      "type": "Study leav",
+      "reason": "i love this",
+      "startDate": "2019-06-07",
+      "endDate": "2019-06-12",
+      "userID": "2",
+      "status": "Not Approve",
+      "id": 5
     }
   ]
 }
