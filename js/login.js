@@ -24,7 +24,7 @@ $(document).ready(() => {
                 
               }else{
                 sessionStorage.setItem("user", user.id);
-                window.location.href = "./managemnt/home.html";
+                window.location.href = "./management/home.html";
                 
               }
             }

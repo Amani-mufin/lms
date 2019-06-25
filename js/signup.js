@@ -51,8 +51,8 @@ $(document).ready(function () {
             type: 'POST',
             dataType: 'json',
             data: {
-                "first-name": fName,
-                "last-name": lName,
+                "fName": fName,
+                "lName": lName,
                 "email": email,
                 "username": username,
                 "password": password,

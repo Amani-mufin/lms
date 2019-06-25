@@ -2,16 +2,16 @@
   "users": [
     {
       "id": 1,
-      "first-name": "amani",
-      "last-name": "kanu",
+      "fName": "amani",
+      "lName": "kanu",
       "email": "kanuamani@gmail.com",
       "username": "sirsuccess",
       "password": "12345",
       "roleID": 2
     },
     {
-      "first-name": "test",
-      "last-name": "test",
+      "fName": "test",
+      "lName": "test",
       "email": "test@gmail.com",
       "username": "test",
       "password": "12345",
@@ -19,8 +19,8 @@
       "id": 2
     },
     {
-      "first-name": "hh",
-      "last-name": "gg",
+      "fName": "hh",
+      "lName": "gg",
       "email": "FFF",
       "username": "DFD",
       "password": "F",
@@ -28,8 +28,8 @@
       "id": 3
     },
     {
-      "first-name": "",
-      "last-name": "",
+      "fName": "",
+      "lName": "",
       "email": "",
       "username": "",
       "password": "G7dSd5w6tBEttRK",
