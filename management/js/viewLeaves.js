@@ -15,10 +15,9 @@ $(document).ready(function () {
                 add += '<td>' + post.id + '</td>';
                 add += '<td>' + post.type + '</td>';
                 add += '<td>' + post.reason + '</td>';
-                add += '<td>' + post.endDate + '</td>';
                 add += '<td>' + post.status + '</td>';
-                add += '<td>' + '<button type="button"  <a href="#" id="' + post.id + '" class="btn approve btn-secondary">Approve</button></a> </td>';
                 add += '<td>' + '<button type="button"  <a href="#" id="' + post.id + '" class="btn viewItem btn-primary" data-toggle="modal" data-target="#exampleModal">VIEW</button></a> </td>';
+                add += '<td>' + '<button type="button"  <a href="#" id="' + post.id + '" class="btn approve btn-secondary">Approve</button></a> </td>';
                 add += '<td>' + '<button   <a href="#" id="' + post.id + '" class="btn deleteItem btn-danger">DELETE</button></a> </td>';
                 add += '</tr>';
 
@@ -69,24 +68,40 @@ $(document).ready(function () {
                 add += '</ul>';
                 $('.modal-body').html(add);
             });
-            
+
         });
     })
 
     //approve leave
-
     $(document).on("click", ".approve", function (e) {
         e.preventDefault();
         var ten = $(this).attr("id")
-        console.log("working edit " + id)
         $.ajax({
+            method: 'GET',
             url: `http://localhost:3000/leaves?id=${ten}`,
-            type: "POST",
-            data: {"set_freq":data}, 
-            success: function(data){
-                data = JSON.toString(data);
-
-            }
+            dataType: 'json'
+        }).done(function (data) {
+            $.map(data, function (post) {
+                $.ajax({
+                    url: "http://localhost:3000/leaves/" + ten,
+                    type: 'PUT',
+                    dataType: 'json',
+                    data: {
+                        "type": post.type,
+                        "reason": post.reason,
+                        "startDate": post.startDate,
+                        "endDate": post.endDate,
+                        "userID": post.userID,
+                        "status": "Approved"
+                    },
+                    error: function () {
+                        alert('Oops! something wrong happen')
+                    },
+                    success: function (data) {
+                        alert(" You have successfuly Approve leave")
+                    }
+                });
+            });
         });
     });
 

@@ -3,11 +3,11 @@ const sequelize = require("../config/db");
 
 class User extends Sequelize.Model { }
 User.init({
-    firstName: {
+    fName: {
         type: Sequelize.STRING,
         allowNull: false
     },
-    lastName: {
+    lName: {
         type: Sequelize.STRING,
         allowNull: false
     },

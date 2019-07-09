@@ -17,25 +17,8 @@
       "password": "12345",
       "roleID": "1",
       "id": 2
-    },
-    {
-      "fName": "hh",
-      "lName": "gg",
-      "email": "FFF",
-      "username": "DFD",
-      "password": "F",
-      "roleID": "1",
-      "id": 3
-    },
-    {
-      "fName": "",
-      "lName": "",
-      "email": "",
-      "username": "",
-      "password": "G7dSd5w6tBEttRK",
-      "roleID": "1",
-      "id": 4
     }
+    
   ],
   "roles": [
     {
@@ -49,31 +32,67 @@
   ],
   "leaves": [
     {
-      "id": 1,
-      "type": "annual",
-      "reason": "annual compulsory leave for all staff",
-      "startDate": "29/05/2017",
-      "endDate": "29/06/2017",
-      "userID": 1,
-      "status": "not Approve"
-    },
-    {
-      "type": "Annual leave",
-      "reason": "my right",
-      "startDate": "2019-05-28",
-      "endDate": "2019-06-19",
-      "userID": "2",
-      "status": "Not Approve",
-      "id": 2
-    },
-    {
       "type": "Study leav",
       "reason": "i love this",
       "startDate": "2019-06-07",
       "endDate": "2019-06-12",
       "userID": "2",
-      "status": "Not Approve",
+      "status": "Approved",
       "id": 5
+    },
+    {
+      "type": "annual",
+      "reason": "annual compulsory leave for all staff",
+      "startDate": "29/05/2017",
+      "endDate": "29/06/2017",
+      "userID": "1",
+      "status": "Approved",
+      "id": 10
+    },
+    {
+      "type": "annual",
+      "reason": "annual compulsory leave for all staff",
+      "startDate": "29/05/2017",
+      "endDate": "29/06/2017",
+      "userID": "1",
+      "status": "Approved",
+      "id": 12
+    },
+    {
+      "type": "Parental leave",
+      "reason": "am due for it",
+      "startDate": "2019-06-28",
+      "endDate": "2019-07-26",
+      "userID": "2",
+      "status": "Approved",
+      "id": 13
+    },
+    {
+      "type": "Annual leave",
+      "reason": "another leave",
+      "startDate": "2019-06-28",
+      "endDate": "2019-07-06",
+      "userID": "2",
+      "status": "Approved",
+      "id": 15
+    },
+    {
+      "type": "Parental leave",
+      "reason": "gsgsgsgsg",
+      "startDate": "2019-06-07",
+      "endDate": "2019-06-21",
+      "userID": "2",
+      "status": "Not Approve",
+      "id": 16
+    },
+    {
+      "type": "Vacation days",
+      "reason": "sss",
+      "startDate": "2019-06-07",
+      "endDate": "2019-06-29",
+      "userID": "2",
+      "status": "Approved",
+      "id": 17
     }
   ]
 }
